@@ -1,0 +1,15 @@
+---
+layout: base
+---
+
+<div class="light-text">
+    {{ content }}
+  </div>
+
+  <div class="gallery">
+    {% for photo in site._photos %}
+        <div class="gallery-item">
+            <img src="{{ photo }}" alt="Missing!">
+        </div>
+    {% endfor %}
+  </div>
